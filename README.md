@@ -7,7 +7,14 @@
   <meta name="description" content="Envi Me Nails — nail services in DFW, TX and Shreveport, LA. Book now for clean, luxe sets and flawless finishes." />
   <meta name="theme-color" content="#F3EEE8" />
 
-  <style>
+  <style>.gallery img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:16px;
+  border:1px solid rgba(31,26,23,.12);
+  box-shadow: 0 10px 20px rgba(31,26,23,.08);
+}
     :root{
       --cream:#F7F1EA;
       --nude:#E7D6C7;
@@ -281,7 +288,14 @@
           <div class="ph">Photo 5</div>
           <div class="ph">Photo 6</div>
         </div>
-      </div>
+      </div>.gallery img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:16px;
+  border:1px solid rgba(31,26,23,.12);
+  box-shadow: 0 10px 20px rgba(31,26,23,.08);
+}
 
       <div class="card" id="booking">
         <h2>Book Now</h2>
@@ -313,12 +327,5 @@
           <li><strong>Email:</strong> <a href="mailto:envimenails88@icloud.com">envimenails88@icloud.com</a></li>
           <li><strong>Service Area:</strong> DFW, Texas & Shreveport, Louisiana</li>
         </ul>
-        <.gallery img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  border-radius:16px;
-  border:1px solid rgba(31,26,23,.12);
-  box-shadow: 0 10px 20px rgba(31,26,23,.08);
-}
-         <a class="btn primary" href="https://square.site/book/0XTW7BTYJ84D9/envymenails-shreveport-no" target="_blank">Book Now</a>
+      
+  
