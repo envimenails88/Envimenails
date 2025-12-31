@@ -160,7 +160,22 @@
       color:var(--muted);
       font-size:13px;
     }
-    .footer-row{display:flex; gap:10px; justify-content:space-between; flex-wrap:wrap}
+    .<div class="card" id="gallery">
+  <h2>Our Work</h2>
+  <div class="small">Soft glam • Florals • Custom luxury sets</div>
+
+  <div class="gallery">
+    <img src="images/nails1.jpg" alt="Envi Me Nails pink floral set">
+    <img src="images/nails2.jpg" alt="Envi Me Nails French tip floral nails">
+    <img src="images/nails3.jpg" alt="Envi Me Nails pedicure floral design">
+    <img src="images/nails4.jpg" alt="Envi Me Nails pink gold stiletto nails">
+    <img src="images/nails5.jpg" alt="Envi Me Nails teal pink freestyle nails">
+    <img src="images/nails6.jpg" alt="Envi Me Nails short pink floral nails">
+    <img src="images/nails7.jpg" alt="Envi Me Nails long rhinestone pink nails">
+    <img src="images/nails8.jpg" alt="Envi Me Nails luxury gold floral nails">
+    <img src="images/nails9.jpg" alt="Envi Me Nails sculpted floral nails">
+  </div>
+</div>-row{display:flex; gap:10px; justify-content:space-between; flex-wrap:wrap}
     .kicker{font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:rgba(31,26,23,.55)}
     @media (max-width: 900px){
       .hero{grid-template-columns:1fr; padding-top:30px}
@@ -285,6 +300,11 @@
           <div class="small">Or text: <strong>945-283-5471</strong></div>
         </form>
       </div>
+      <div>© <span id="year"></span> Envi Me Nails • Luxury Nail Art</div>
+<div class="small">
+  <a href="https://instagram.com/envy_me_nails" target="_blank">Instagram</a> • 
+  <a href="https://square.site/book/0XTW7BTYJ84D9/envymenails-shreveport-no" target="_blank">Book Now</a>
+</div>
 
       <div class="card" id="contact">
         <h2>Contact</h2>
@@ -293,40 +313,12 @@
           <li><strong>Email:</strong> <a href="mailto:envimenails88@icloud.com">envimenails88@icloud.com</a></li>
           <li><strong>Service Area:</strong> DFW, Texas & Shreveport, Louisiana</li>
         </ul>
-        <p class="small" style="margin-top:10px">
-          Follow/Book link placeholder: add your Instagram, Square, or Calendly link anytime.
-        </p>
-      </div>
-    </section>
-
-    <footer>
-      <div class="footer-row">
-        <div>© <span id="year"></span> Envi Me Nails. All rights reserved.</div>
-        <div class="small">Nudes & Cream aesthetic • Simple booking</div>
-      </div>
-    </footer>
-  </main>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    function openEmailDraft(e){
-      e.preventDefault();
-      const to = "envimenails88@icloud.com";
-      const name = encodeURIComponent(document.getElementById("name").value.trim());
-      const city = encodeURIComponent(document.getElementById("city").value.trim());
-      const service = encodeURIComponent(document.getElementById("service").value.trim());
-      const date = encodeURIComponent(document.getElementById("date").value.trim());
-      const notes = encodeURIComponent(document.getElementById("notes").value.trim());
-
-      const subject = encodeURIComponent("Booking Request — Envi Me Nails");
-      const body = encodeURIComponent(
-        `Hi Envi Me Nails,\n\nI’d like to book an appointment.\n\nName: ${decodeURIComponent(name)}\nLocation: ${decodeURIComponent(city)}\nService: ${decodeURIComponent(service)}\nPreferred Date/Time: ${decodeURIComponent(date)}\nNotes: ${decodeURIComponent(notes)}\n\nThank you!`
-      );
-
-      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
-      return false;
-    }
-  </script>
-</body>
-</html>
+        <.gallery img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:16px;
+  border:1px solid rgba(31,26,23,.12);
+  box-shadow: 0 10px 20px rgba(31,26,23,.08);
+}
+         <a class="btn primary" href="https://square.site/book/0XTW7BTYJ84D9/envymenails-shreveport-no" target="_blank">Book Now</a>
